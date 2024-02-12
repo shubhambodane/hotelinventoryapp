@@ -1,5 +1,8 @@
 <h1 class="display-4 text-center mb-4"> Welcome to {{hotelName}}</h1>
 <div *ngIf="selectedRoom">{{ selectedRoom | json}}</div>
+<div>
+    <button (click)="addRoom()">Add Room</button>
+</div>
 <div *ngIf="rooms.availableRooms > 0 ">
     <app-rooms-list [rooms]="roomList" (selectedRoom)="selectRoom($event)">
     </app-rooms-list>

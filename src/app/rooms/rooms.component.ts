@@ -39,7 +39,7 @@ export class RoomsComponent implements OnInit {
       {
         roomNumber: 201,
         roomType: 'Normal Room',
-        amenities: 'television, wifi, ',
+        amenities: 'television, wifi',
         checkinTime: new Date('20-Nov-2023'),
         checkoutTime: new Date('27-Nov-2023'),
         price: 1000,
@@ -55,5 +55,19 @@ export class RoomsComponent implements OnInit {
   selectRoom(room: RoomList) {
     this.selectedRoom = room;
     console.log(room);
+  }
+
+  addRoom(): void {
+    const room: RoomList = {
+      roomNumber: 3,
+      roomType: 'Normal Room',
+      amenities: 'television, wifi',
+      checkinTime: new Date('20-Nov-2023'),
+      checkoutTime: new Date('27-Nov-2023'),
+      price: 1000,
+      photos: 'test1',
+    };
+    // this.roomList.push(room);
+    this.roomList = [...this.roomList, room];
   }
 }
