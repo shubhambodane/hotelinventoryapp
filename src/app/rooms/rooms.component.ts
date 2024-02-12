@@ -23,7 +23,7 @@ export class RoomsComponent {
 
   roomList: RoomList[] = [
     {
-      roomNumber: 1,
+      roomNumber: 101,
       roomType: 'Deluxe Room',
       amenities: 'television, wifi, tv, AC',
       checkinTime: new Date('11-Nov-2023'),
@@ -32,7 +32,7 @@ export class RoomsComponent {
       photos: 'test',
     },
     {
-      roomNumber: 2,
+      roomNumber: 201,
       roomType: 'Normal Room',
       amenities: 'television, wifi, ',
       checkinTime: new Date('20-Nov-2023'),
